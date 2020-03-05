@@ -1,4 +1,6 @@
 # Smashing
+![Website Screenshot](https://github.com/3v-workspace/Smashing/blob/master/Screenshot%20from%202020-03-05%2014-37-03.png)
+
 To add widgets to existing dashboard/Smashing
 
 It is expected that Smashing has already been installed. If not https://github.com/Smashing/smashing/wiki/How-to:-Install-Smashing-on-Ubuntu-or-Debian.
