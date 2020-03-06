@@ -7,7 +7,7 @@ require_relative 'config.rb'
 key = '' # temporary key for zoho API
 
 # get zoho temporary token from zoho API Token actuality during 1 hour maximum.
-SCHEDULER.every '20m', :blocking => true, :first_in => 0 do
+SCHEDULER.every '59m', :blocking => true, :first_in => 0 do
     url = "https://accounts.zoho.eu/oauth/v2/token" 
     uri = URI.parse(url)
     parameters =  $GET_ZOHO_TOKEN
@@ -18,7 +18,7 @@ SCHEDULER.every '20m', :blocking => true, :first_in => 0 do
 
 end
 
-SCHEDULER.every '5m', :first_in => 0 do
+SCHEDULER.every '10m', :first_in => 0 do
     # get tickets list from zoho API
     uri = URI("https://desk.zoho.eu/api/v1/tickets?include=contacts,assignee,departments,team,isRead")
     req = Net::HTTP::Get.new(uri)
